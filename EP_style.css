@@ -3,17 +3,71 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Tajawal', sans-serif;
-    overflow: none;
 }
 
 
-.grid-container{
+.grid-container-ep{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url("./IMG_20231124_103434_163.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grid-container-home{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url("./HighresScreenshot00005\ \(1\).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grid-container-games{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url("./games.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grid-container-tournaments{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url("./tournaments.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grid-container-marketplace{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url("./marketplace.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grid-container-dt{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url("./dev_tools.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -37,7 +91,6 @@
     grid-column-end: 8;
     background: rgba(0,0,0,0.11);
     backdrop-filter: blur(8px);
-    overflow-x: none;
 }
 
 .navbuttons{
@@ -76,7 +129,15 @@
 .button:hover::after{
     width: 100%;
 }
-    
+
+.button.active{
+    color: #fafafa;
+}
+
+.button.active::after{
+    width: 100%;
+}
+
 
 .navmenu{
     --button-color: white;
@@ -124,8 +185,8 @@
 }
 
 .icon{
-    width: 6rem;
-    height: 6rem;
+    width: 4rem;
+    height: 4rem;
 }
 
 .icon:hover{
@@ -156,21 +217,19 @@
 
 ._card{
     display: flex;
-    gap: 1em;
+    gap: 1rem;
     flex-direction: column;
     position: relative;
     box-sizing: border-box;
     padding: 2rem 2.5rem;
     backdrop-filter: blur(8px);
     background-color: rgba(225,225,225,0.25);
-    overflow: hidden;
-
 }
 
 .cb1{
     width: 40rem;
     min-height: 20rem;
-    margin: 1em;
+    margin: 1rem;
     clip-path: polygon(50% 0%, 86% 0, 100% 22%, 100% 79%, 100% 100%, 0 100%, 0 83%, 0% 43%, 0 0);
 }
 
@@ -181,20 +240,46 @@
 .cb2{
     width: 20rem;
     min-height: 15rem;
-    margin: 1em;
+    margin: 1rem;
     clip-path: polygon(50% 0%, 86% 0, 100% 22%, 100% 79%, 100% 100%, 0 100%, 0 83%, 0% 43%, 0 0);
 }
 
 .cb3-container{
     display: grid;
     grid-column-start: 5;
-    grid-column-end: 7;
 }
 
 .cb3{
-    width: 30rem;
-    min-height: 35rem;
-    margin: 1em;
+    position: relative;
+    width: 25rem;
+    min-height: 30rem;
+    margin: 1rem;
+}
+
+.card-container-home{
+    display: grid;
+    grid-column-start: 3;
+}
+
+.card-container-home h2{
+    margin-left: 4.8vw;
+    margin-top: 2vh;
+}
+
+.cb3-home{
+    margin: 1rem;
+    width: 50vw;
+    height: 20vh;
+    left: 7%;
+    clip-path: polygon(0 0, 100% 0, 100% 51%, 90% 100%, 0% 100%, 0 79%);
+}
+
+.vr-guy{
+    position: absolute;
+    width: 35rem;
+    right: 0.1%;
+    bottom: 17%;
+    
 }
 
 .title{
@@ -207,3 +292,20 @@
     font-size: larger;
 }
 
+._btn{
+    width: 16rem;
+    height: 2.5rem;
+    background-color: rgba(32, 18, 18, 0.45);
+    clip-path: polygon(10% 5%, 90% 5%, 100% 51%, 88% 95%, 13% 95%, 0 51%);
+    border-style: inherit;
+    transition: 0.3s;
+}
+
+._btn:hover{
+    background-color: rgba(32, 18, 18, 0.38);
+    color: white;
+    letter-spacing: 1px;
+}
+
+/*
+clip-path: polygon(10% 0, 90% 0, 100% 50%, 100% 50%, 90% 100%, 10% 100%, 0 50%, 0 50%);
