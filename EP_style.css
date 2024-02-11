@@ -199,34 +199,49 @@
     flex-direction: column;
     padding: 1vw;
     align-items: center;
-    height: 20vh;
+    height: 30vh;
     justify-content: space-evenly;
+    margin-top: 10vh;
 }
 
-.icon{
-    width: 4rem;
-    height: 4rem;
+.icon.telegram:hover{
+    transform: scale(1.3);
+    transition: .3s;
+    content: url("./Buttons-20240211T165955Z-001/Buttons/Telegram\ Hover.png");
 }
 
-.icon:hover{
+.icon.discord:hover{
     transform: scale(1.3);
     transition: ease-out .3s;
+    content: url("./Buttons-20240211T165955Z-001/Buttons/Discord\ Hover.png");
+}
+
+.icon.twitter:hover{
+    transform: scale(1.3);
+    transition: ease-out .3s;
+    content: url("./Buttons-20240211T165955Z-001/Buttons/Twitter\ Hover.png");
+}
+
+.icon.website:hover{
+    transform: scale(1.3);
+    transition: ease-out .3s;
+    content: url("./Buttons-20240211T165955Z-001/Buttons/Website\ Hover.png");
 }
 
 .logo-container{
     display: flex;
-    position: sticky;
     backdrop-filter: blur(8px);
     background: rgba(0, 0, 0, 0.11);
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     border: none;
     overflow: hidden;
 }
 
 .logo{
-    height: 4rem;
+    height: 3.8rem;
     top: 0;
+    margin-left: 1vh
 }
 
 .card-container{
@@ -248,7 +263,7 @@
 
 .cb1{
     width: 40rem;
-    min-height: 20rem;
+    height: 20rem;
     margin: 1rem;
     clip-path: polygon(50% 0%, 86% 0, 100% 22%, 100% 79%, 100% 100%, 0 100%, 0 83%, 0% 43%, 0 0);
 }
