@@ -391,3 +391,28 @@
     text-align: center;
     display: block;
 }
+
+.card-icons-container{
+    display: flex;
+}
+
+.calender-container{
+    height: 1.5vh;
+    display:inline-flex;
+}
+
+.calender-text{
+    color: #a0a0a0;
+    margin-left: .4vw;
+}
+
+.people-container{
+    display: inline-flex;
+    height: 1.5vh;
+    margin-left: 1.5vw;
+}
+
+.people-text{
+    color: #a0a0a0;
+    margin-left: .4vw;
+}
