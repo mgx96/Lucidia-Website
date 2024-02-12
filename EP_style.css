@@ -90,6 +90,13 @@
     background-repeat: no-repeat;
 }
 
+.menu{
+    display:flex;
+    width: 80%;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
 .sidebar{
     background: rgba(0,0,0,0.11);
     grid-column-start: 1;
@@ -103,7 +110,7 @@
     position: sticky;
     top: 0;
     width: 100%;
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-column-end: 8;
     background: rgba(0,0,0,0.11);
     backdrop-filter: blur(8px);
@@ -114,11 +121,11 @@
     display: flex;
     width: 80%;
     justify-content: space-evenly;
-    flex-basis: 70%;
-    margin-left: 12rem;
+    flex-basis: 91.5%;
 }
 
 .button{
+    display: block;
     position: relative;
     text-decoration: none;
     font-family: 'Tajawal', sans-serif;
@@ -160,6 +167,7 @@
     --button-color: white;
     background-color: transparent;
     border: none;
+    display: none;
 }
 
 .menu-line {
@@ -228,21 +236,11 @@
     content: url("./Buttons-20240211T165955Z-001/Buttons/Website\ Hover.png");
 }
 
-.logo-container{
-    display: flex;
-    backdrop-filter: blur(8px);
-    background: rgba(0, 0, 0, 0.11);
-    justify-content: left;
-    align-items: center;
-    border: none;
-    overflow: hidden;
-}
+
 
 .logo{
-    height: 3.8rem;
-    top: 0;
-    margin-left: 1vh;
-    z-index: 2;
+    width: 2.5vw;
+    margin-left: 1vw;
 }
 
 .card-container{
@@ -316,6 +314,7 @@
 
 .cb3-home{
     margin: 1rem;
+    padding: 4%;
     width: 70vw;
     height: 20vh;
     left: 7%;
@@ -366,11 +365,10 @@
 
 .tournament-card{
     width: 15vw;
-    height: 40vh;
+    height: 34vh;
     backdrop-filter: blur(8px);
     background-color: rgba(225, 225, 225, 0.011);
     box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
-    overflow: hidden;
     margin: 1vw;
 }
 
@@ -395,6 +393,8 @@
 
 .card-icons-container{
     display: flex;
+    flex-wrap: wrap;
+    padding: 1vw;
 }
 
 .calender-container{
@@ -435,4 +435,34 @@
     height: 2.3vh;
     text-align: center;
     color: #a0a0a0;
+}
+
+@media (max-width: 1160px) {
+   
+}
+
+@media (max-width: 1047px) {
+    .menu{
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: rgba(0,0,0,0.11);
+        backdrop-filter: blur(8px);
+        width: 200px;
+        height: 55vh;
+        justify-content: space-between;
+        padding-bottom: 5vh;
+        margin-top: 8vh;
+    }
+
+    .menu li{
+        
+    }
+
+    .navmenu{
+        display: block;
+    }
 }
