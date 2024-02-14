@@ -10,8 +10,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./EP_style.css">
 </head>
-<body id="ep">
-    <div class="grid-container-ep">
+<body id="dao">
+    <div class="grid-container-login">
         <div class="sidebar">
             <div class="side-content">
                 <ul class="icons-container">
@@ -31,44 +31,38 @@
                     <path class="menu-line bottom" d="m 69.575405,67.073826 h -40 c -13.100415,0 -14.380204,-31.80258 -6.899646,-33.421777 24.612039,-5.327373 -9.016154,52.337577 12.75751,30.563913 l 28.284272,-28.284272"></path>
                 </svg>
             </button>
-            <nav class="navbuttons">
+            <nav class="navbuttons-login">
                 <ul class="menu">
-                    <li><a data-active="home" href="./index.html" class="home button">Home</a></li>
-                    <li><a data-active="games" href="./games.html" class="games button">Games</a></li>
-                    <li><a data-active="tournaments" href="./tournaments.html" class="tournaments button">Tournaments</a></li>
-                    <li><a data-active="marketplace" href="./marketplace.html" class="marketplace button">Marketplace</a></li>
-                    <li><a data-active="dt" href="./DT.html" class="tools button">Dev Tools</a></li>
-                    <li><a data-active="ep" href="./EP.html" class="educational button">Educational Portal</a></li>
-                    <li><a data-active="dao" href="./dao.html" class="dao button">DAO</a></li>
+                    <li><a href="./index.html" class="home button">Home</a></li>
+                    <li><a href="./games.html" class="games button">Games</a></li>
+                    <li><a href="./tournaments.html" class="tournaments button">Tournaments</a></li>
+                    <li><a href="./marketplace.html" class="marketplace button">Marketplace</a></li>
+                    <li><a href="./DT.html" class="tools button">Dev Tools</a></li>
+                    <li><a href="./EP.html" class="educational button">Educational Portal</a></li>
+                    <li><a href="./dao.html" class="dao button">DAO</a></li>
                    </ul>
             </nav>
-            <a href="./login.html"><button class="_btn _btn-borders">Log in</button></a>
         </div>
-        <div class="card-container">
-            <div class="_card cb1">
-                <h1 class="title">Welcome to the Web3 Gaming Education Portal</h1>
-                <p class="text">Your Gateway to the World of Web3 Gaming</p>
-                <button class="_btn _btb-borders">Join Us</button>
-            </div>
-            <div class="cb2-container">
-                <div class="_card cb2">
-                    <h2 class="title">About Us</h2>
-                    <p class="text">We are passionate about Web3 gaming and are committed to providing you with valuable resources to demystify this exciting world.</p>
+        <div class="body-container-login">
+            <div class="login-card-container">
+                <div class="_card-login cb1-login">
+                    <div class="login-content-container">
+                        <h2 class="login-title">Enter Lucidia</h2>
+                        <div class="login-section">
+                            <h4 class="login-instructions">Login with</h4>
+                            <div class="wallet-buttons-container">
+                                <a href="#"><button class="_btn-wallet metamask">
+                                    <img class="metamask-icon" src="./metamask-icon.png" alt="metamask icon">MetaMask</button></a>
+                                <a href="#"><button class="_btn-wallet walletconnect">
+                                    <img class="walletconnect-icon" src="./walletconnect-vector-logo-seeklogo/walletconnect-seeklogo.svg" alt="walletconnect icon">WalletConnect</button></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="_card cb2">
-                    <h2 class="title">Coming Soon!</h2>
-                    <p class="text">Our team is working tirelessly to bring you tutorials, articles, videos, and much more to help you navigate Web3 gaming. Stay tuned!</p>
-                </div>
-            </div>
-        </div>
-        <div class="cb3-container">
-            <div class="_card cb3">
-                <img class="vr-guy" alt="A man wearing a vr headset" src="./vr-guy.png">
             </div>
         </div>
     </div>
-    <script src="./pageSelector.js"></script>
     <script src="./hamMenu.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./pageSelector.js"></script>
 </body>
 </html>

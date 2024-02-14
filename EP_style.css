@@ -90,6 +90,17 @@
     background-repeat: no-repeat;
 }
 
+.grid-container-login{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url("./HighresScreenshot00005\ \(1\).png");
+    background-size: cover;
+    background-position: center;
+}
+
 .menu{
     display:flex;
     width: 80%;
@@ -98,7 +109,6 @@
 }
 
 .sidebar{
-    background: rgba(0,0,0,0.11);
     grid-column-start: 1;
     grid-row: 2;
     grid-row-end: 9;
@@ -114,6 +124,7 @@
     grid-column-end: 8;
     background: rgba(0,0,0,0.11);
     backdrop-filter: blur(8px);
+    height: 6vh;
     z-index: 1;
 }
 
@@ -121,7 +132,15 @@
     display: flex;
     width: 80%;
     justify-content: space-evenly;
-    flex-basis: 91.5%;
+    flex-basis: 70%;
+    padding-top: 1rem;
+}
+
+.navbuttons-login{
+    display: flex;
+    width: 90%;
+    padding-top: 1rem;
+    justify-content: space-evenly;
 }
 
 .button{
@@ -239,7 +258,7 @@
 
 
 .logo{
-    width: 2.5vw;
+    width: 40px;
     margin-left: 1vw;
 }
 
@@ -260,11 +279,73 @@
     background-color: rgba(225,225,225,0.25);
 }
 
+._card-login{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+    padding: 2rem 2.5rem;
+    backdrop-filter: blur(8px);
+}
+
 .cb1{
     width: 40rem;
     height: 20rem;
     margin: 1rem;
     clip-path: polygon(50% 0%, 86% 0, 100% 22%, 100% 79%, 100% 100%, 0 100%, 0 83%, 0% 43%, 0 0);
+}
+
+.login-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 94vh;
+    width: 100vw;
+}
+
+.cb1-login{
+    width: 40rem;
+    height: 25rem;
+    margin: 1rem;
+    clip-path: polygon(0 0, 80% 0%, 100% 0, 100% 80%, 100% 100%, 15% 100%, 0 75%, 0% 20%);
+    background-color: rgba(225, 225, 225, 0.09);
+}
+
+.login-content-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.login-title{
+    color: #fafafa;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-instructions{
+    color: #fafafa;
+    display: flex;
+    font-size: 1.3rem;
+    margin-top: 4vh;
+}
+
+.login-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    flex: 1;
+}
+
+.wallet-buttons-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    align-items: center;
 }
 
 .cb2-container{
@@ -343,7 +424,7 @@
 ._btn{
     width: 16rem;
     height: 2.5rem;
-    background-color: rgba(32, 18, 18, 0.45);
+    background-color: #b28539;
     clip-path: polygon(90% 5%, 10% 5%, 1% 50%, 10% 95%, 90% 95%, 99% 50%);
     transition: 0.5s;
     color: #fafafa;
@@ -353,6 +434,35 @@
     background-color: rgba(32, 18, 18, 0.38);
     color: white;
     letter-spacing: 0.2px;
+}
+
+._btn-wallet{
+    width: 26rem;
+    height: 2.5rem;
+    background-color: rgba(32, 18, 18, 0.58);
+    clip-path: polygon(90% 5%, 10% 5%, 1% 50%, 10% 95%, 90% 95%, 99% 50%);
+    transition: 0.5s;
+    color: #a0a0a0a0;
+}
+
+
+.metamask-icon{
+    height: 1.8vh;
+    position: absolute;
+    right: 65%;
+    padding-top: .1rem;
+}
+
+.walletconnect-icon{
+    height: 2vh;
+    position: absolute;
+    right: 64%;
+}
+
+._btn-wallet:hover{
+    background-color: rgba(32, 18, 18, 0.28);
+    letter-spacing: 0.2px;
+    color: #fafafa;
 }
 
 .tournament-cards-container{
@@ -389,6 +499,7 @@
 .tournament-card a{
     text-align: center;
     display: block;
+    text-decoration: none;
 }
 
 .card-icons-container{
@@ -410,7 +521,7 @@
 .people-container{
     display: inline-flex;
     height: 1.5vh;
-    margin-left: 1.5vw;
+    margin-left: 1vw;
 }
 
 .people-text{
@@ -420,9 +531,11 @@
 
 .body-container{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: left;
+    margin-left: 1.4vw;
+    margin-top: 1vh;
 }
+
 
 .search{
     backdrop-filter: blur(2px);
@@ -437,32 +550,238 @@
     color: #a0a0a0;
 }
 
+@media (max-width: 1545px) {
+    .title{
+        font-size: 2rem;
+    }
+
+    .text{
+        font-size: 1.12rem;
+    }
+
+    .tournament-card .title{
+        font-size: 1.5rem;
+    }
+
+    .calender-text, .people-text{
+        font-size: .85rem;
+    }
+
+    .tournament-card{
+        height: 30vh;
+    }
+}
+
+@media (max-width: 1325px) {
+    .calender-text, .people-text{
+        font-size: .75rem;
+    }
+
+    .cb3-home{
+        height: 15vh;
+        width: 80vw;
+        padding-bottom: 7vh;
+    }
+
+    .title{
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 1250px){
+    .text{
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 1160px) {
-   
+   .calender-text, .people-text{
+    font-size: .7rem;
+   }
+
+   .tournament-card{
+    height: 25vh;
+   }
+
+   .calender-container, .people-container{
+    height: 1.2vh;
+   }
+
+   .tournament-card .title{
+    font-size: 1.2rem
+   }
+
+   .title-h{
+    font-size: 1rem;
+   }
+
 }
 
 @media (max-width: 1047px) {
     .menu{
+        right: 0;
+        display: none;
+    }
+    .menu.active{
         justify-content: start;
         flex-direction: column;
         align-items: center;
         position: fixed;
+        display: flex;
         top: 0;
-        right: 0;
-        background: rgba(0,0,0,0.11);
+        right:0;
+        background: rgba(0,0,0,0.45);
         backdrop-filter: blur(8px);
         width: 200px;
         height: 55vh;
         justify-content: space-between;
-        padding-bottom: 5vh;
-        margin-top: 8vh;
-    }
-
-    .menu li{
-        
+        padding-top: 3vh;
+        padding-bottom: 4vh;
+        margin-top: 6vh;
+        transition: ease-out .3s;
     }
 
     .navmenu{
         display: block;
     }
+
+    .calender-container, .people-container{
+        height: 1vh;
+    }
+
+    .calender-text, .people-text{
+        font-size: .6rem;
+    }
+    
+    .tournament-card .title{
+        font-size: 1.1rem;
+    }
+}
+
+
+@media (max-width: 954px){
+    .calender-container, .people-container{
+        height: .88vh;
+    }
+
+    .tournament-card{
+        height: 23vh;
+    }
+
+    .cb3-home{
+        height: 12vh;
+    }
+
+    .title{
+        font-size: 1.5rem;
+    }
+
+    .text{
+        font-size: .8rem;
+    }
+
+    .grid-container-tournaments{
+        height: 100vh;
+    }
+
+    .tournament-card-button{
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 820px){
+    .calender-container, .people-container{
+        height: .8vh;
+    }
+
+    .tournament-card .title{
+        font-size: .9rem
+    }
+
+    .tournament-card{
+        height: 20vh;
+    }
+
+    .calender-text, .people-text{
+        font-size: .5rem;
+    }
+
+}
+
+@media (max-width: 699px){
+
+    .title{
+        font-size: 1rem;
+        margin: 0;
+        padding-bottom: 0;
+    }
+
+    .text{
+        font-size: .5rem;
+    }
+
+    .tournament-card .title{
+        font-size: .55rem;
+    }
+
+    .calender-text, .people-text{
+        font-size: .35rem;
+    }
+
+    .calender-container, .people-container{
+        height: .5vh;
+    }
+
+    .cb3-home{
+        width: 66vw;
+        height: 13.5vh;
+    }
+
+    .menu.active{
+        margin-top: 10vh;
+    }
+
+    .card-container-home{
+        height: 90vh;
+    }
+
+    .tournament-card-button{
+        font-size: 50%;
+    }
+
+    .tournament-cards-container{
+        margin-top: 0;
+    }
+
+    .body-container{
+        height: 5vh;
+        margin-top: 0;
+    }
+
+    .card-container-home{
+        gap: 0px;
+        height: 60vh;
+    }
+
+}
+
+@media (max-width: 500px){
+    .tournament-card .title{
+        font-size: .45rem;
+    }
+
+    .calender-text, .people-text{
+        font-size: .2rem;
+    }
+
+    .tournament-card{
+        height: 17vh;
+    }
+
+
+    .cb3-home{
+        height: 11vh;
+        width: 70vw;
+    }
+
 }
