@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Games</title>
+    <title>Home</title>
     <link rel="stylesheet" href="plugins/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="plugins/fontawesome-free-6.5.1-web/css/all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" />
     <link rel="stylesheet" href="styles/global.css" />
   </head>
-  <body class="games">
+  <body class="home">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="logo" /></a>
@@ -26,8 +26,8 @@
         </button>
         <div class="container collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Games</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="./home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="./games.html">Games</a></li>
             <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Tournaments</a></li>
             <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Marketplace</a></li>
             <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Dev Tools</a></li>
@@ -36,20 +36,24 @@
           </ul>
           <ul class="navbar-nav d-flex">
             <li class="nav-item">
-              <a class="nav-link locale" aria-current="page" href="#">
-                <img src="images/flags/us.svg" alt="Locale" /> Eng
-                <img src="images/icons/arrow-down.svg" alt="arrow-down"
+              <a class="nav-link locale" aria-current="page" href="#"
+                ><img src="./images/flags/us.svg" alt="Locale" /> Eng
+                <img src="./images/icons/arrow-down.svg" alt="arrow-down"
               /></a>
             </li>
-            <li class="nav-item"><a class="default-button" aria-current="page" href="#">Log-in</a></li>
+            <li class="balance"><img src="./images/coin.png" alt="coin" /><span>0.00</span></li>
+            <li class="plus">+</li>
+            <li class="avatar"><img src="./images/avatar/user.jpg" alt="avatar" /></li>
+            <li class="userinfo">
+              <span class="username">Sofia Turner</span>
+              <div class="red"></div>
+              <span class="wallet-address">0x3082...5681</span>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
     <div class="container">
-      <form class="search-form" action="#">
-        <input type="text" name="q" placeholder="search game" />
-      </form>
       <div class="advert">
         <img src="images/adverts/games.jpg" alt="advert" width="100%" />
         <div class="device-desktop"></div>
@@ -60,43 +64,49 @@
         </div>
         <a class="default-button" href="#">view game</a>
       </div>
+      <div></div>
       <div class="game-sections">
-        <h2>Featured Games</h2>
+        <h2>Explore Our Ecosystem</h2>
+        <span class="description"
+          >Dive into our diverse platforms designed for gamers, developers, and creators. From the Developer Marketplace
+          to the NFT Integration Toolkit, each solution is crafted to enhance your gaming experience and development
+          journey.</span
+        >
         <div class="row">
           <div class="col-md-3">
-            <a class="game-item" href="./games/curseofthepharaos_01.html">
+            <a class="game-item" href="">
               <div class="image">
-                <img class="img-fluid" src="images/featured-games/01.jpg" alt="featured-games" />
-                <div class="device-desktop"></div>
+                <img class="img-fluid" src="images/ecosystem/middle-eastern.svg" alt="ecosystem" />
               </div>
-              <span class="title">Curse Of The Pharaoh</span>
+              <span class="title">Marketplace for Middle-Eastern Developers</span>
+              <span class="details">A culturally tailored marketplace fostering collaboration among de...</span>
             </a>
           </div>
           <div class="col-md-3">
-            <a class="game-item" href="./games/cryptocraft_01.html">
+            <a class="game-item" href="#">
               <div class="image">
-                <img class="img-fluid" src="images/featured-games/02.jpg" alt="featured-games" />
-                <div class="device-desktop"></div>
+                <img class="img-fluid" src="images/ecosystem/ingame-assets.svg" alt="ecosystem" />
               </div>
-              <span class="title">Cryptocraft</span>
+              <span class="title">Marketplace for In-Game Assets and Code</span>
+              <span class="details">A hub for trading game assets and code, enhancing resource sharing...</span>
             </a>
           </div>
           <div class="col-md-3">
-            <a class="game-item" href="./games/desertwarriors_01.html">
+            <a class="game-item" href="#">
               <div class="image">
-                <img class="img-fluid" src="images/featured-games/03.jpg" alt="featured-games" />
-                <div class="device-desktop"></div>
+                <img class="img-fluid" src="images/ecosystem/nft-integration.svg" alt="ecosystem" />
               </div>
-              <span class="title">Desert Warriors</span>
+              <span class="title">Comprehensive NFT Integration Toolkit</span>
+              <span class="details">Tools simplifying NFT integration into games, bridging creativity an...</span>
             </a>
           </div>
           <div class="col-md-3">
             <a class="game-item" href="./games/sandstorm_01.html">
               <div class="image">
-                <img class="img-fluid" src="images/featured-games/04.jpg" alt="featured-games" />
-                <div class="device-desktop"></div>
+                <img class="img-fluid" src="images/ecosystem/inventory.svg" alt="ecosystem" />
               </div>
-              <span class="title">Sandstorm Racers</span>
+              <span class="title">Built-in Game Inventory System</span>
+              <span class="details">A seamless solution for managing in-game inventories and integrai...</span>
             </a>
           </div>
         </div>

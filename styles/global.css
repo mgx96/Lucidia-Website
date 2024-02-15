@@ -8,6 +8,7 @@ body {
   padding-bottom: 100px;
 }
 
+body.home,
 body.games {
   background: linear-gradient(0deg, rgba(13, 13, 13, 0.52) 0%, rgba(13, 13, 13, 0.52) 100%),
     url(../images/backgrounds/games.jpg) no-repeat top, #0d0d0d 50% / cover no-repeat;
@@ -111,6 +112,7 @@ body.sandstorm_bg3 {
   background-size: 100%;
 }
 
+body.home::before,
 body.games::before {
   display: block;
   content: '';
@@ -148,6 +150,7 @@ body.curse::before {
 
 .navbar .container {
   padding-left: 0;
+  padding-right: 0;
 }
 
 .navbar .container-fluid {
@@ -451,4 +454,335 @@ h2 {
   font-weight: 400;
   margin-top: 4px;
   line-height: 1;
+}
+
+/* After - Login */
+.navbar-nav .balance {
+  margin-top: 4px;
+  padding-left: 8px;
+  min-width: 71px;
+  max-height: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3px;
+  background: rgba(240, 240, 240, 0.24);
+  backdrop-filter: blur(10px);
+}
+
+.navbar-nav .balance img {
+  width: 20px;
+  height: 20px;
+}
+
+.navbar-nav .balance span {
+  margin-left: 2px;
+  color: #f0f0f0;
+  font-family: Tajawal;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.purchase {
+  margin-top: 4px;
+  margin-left: 4px;
+  padding: 8px 5px;
+  display: flex;
+  flex-direction: row;
+  min-width: 25px;
+  max-height: 32px;
+  background: rgba(240, 240, 240, 0.24);
+  backdrop-filter: blur(10px);
+  align-items: center;
+}
+
+.purchase span {
+  margin-left: 3px;
+  color: #f0f0f0;
+  font-family: Tajawal;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.avatar img {
+  width: 36px;
+  height: 36px;
+  margin-left: 20px;
+  margin-top: 2px;
+}
+
+.userinfo {
+  margin-left: 12px;
+  margin-top: 2px;
+}
+
+.userinfo .username {
+  color: #f0f0f0;
+  font-family: Tajawal;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.userinfo .username .red {
+}
+
+.userinfo .wallet-address {
+  color: #f0f0f0;
+  font-family: Tajawal;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.logout {
+  position: fixed;
+  bottom: 69px;
+  left: 40px;
+}
+
+.go-play {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.go-play .detail-box {
+  margin-left: 28px;
+  max-height: 40px;
+  border-left: solid 1px #aaa;
+  max-width: 200px;
+  padding-left: 13px;
+}
+
+.go-play .detail-box .description {
+  color: #f0f0f0;
+  font-family: Tajawal;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.curse-advert.after-login {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  column-gap: 31px;
+}
+
+.main-advert {
+  max-width: 492px;
+}
+
+.character-abilities {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  max-width: 709px;
+}
+
+.character-abilities .users-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  max-width: 210px;
+}
+
+.blur-pane {
+  background: rgba(13, 13, 13, 0.52);
+  backdrop-filter: blur(10px);
+  padding: 16px;
+  padding-right: 18px;
+}
+
+.character-abilities .users-info .user-friends {
+  display: flex;
+  flex-direction: column;
+  row-gap: 11px;
+}
+
+.character-abilities .users-info .user-friends .user-level {
+  display: flex;
+  flex-direction: row;
+  column-gap: 12px;
+  margin-bottom: 17px;
+}
+
+.character-abilities .users-info .user-friends .user-level span {
+  overflow: hidden;
+  color: #f0f0f0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Tajawal;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.character-abilities .users-info .user-friends .user-level .level {
+  display: flex;
+  flex-direction: row;
+  column-gap: 8px;
+}
+
+.character-abilities .users-info .user-friends .user-level .level .level-progress {
+  margin-top: 5px;
+  background: rgba(240, 240, 240, 0.24);
+  backdrop-filter: blur(10px);
+  min-width: 94px;
+  max-height: 4px;
+}
+
+.character-abilities .users-info .user-friends .user-level .level span {
+  margin-top: 3px;
+  color: #f0f0f0;
+  font-family: Tajawal;
+  font-size: 6px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.character-abilities .users-info .user-friends .add-friend {
+  display: flex;
+  align-items: start;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.character-abilities .users-info .user-friends .add-friend span {
+  overflow: hidden;
+  color: #f0f0f0;
+  text-overflow: ellipsis;
+  font-family: Tajawal;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.character-abilities .users-info .user-friends .add-friend .plus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  background: rgba(240, 240, 240, 0.24);
+  backdrop-filter: blur(10px);
+  color: #f0f0f0;
+  font-family: Tajawal;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.friend-list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 8px;
+}
+
+.friend-list .friend-item {
+  display: flex;
+  flex-direction: row;
+  column-gap: 4px;
+}
+
+.friend-list .friend-item .friend-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.friend-list .friend-item .friend-info .name {
+  overflow: hidden;
+  color: var(--text-sea-shell, #f0f0f0);
+  text-overflow: ellipsis;
+  font-family: Tajawal;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.friend-list .friend-item .friend-info .level {
+  color: var(--text-sea-shell, #f0f0f0);
+  font-family: Tajawal;
+  font-size: 6px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.character-abilities .users-info .top-player,
+.character-abilities .users-info .user-stats {
+  display: flex;
+  flex-direction: column;
+  row-gap: 11px;
+}
+
+.character-abilities .users-info .top-player {
+  padding: 8px 16px;
+}
+
+.character-abilities .users-info .user-stats {
+  padding: 11px 16px;
+}
+
+.character-abilities .users-info .top-player .title,
+.character-abilities .users-info .user-stats .title {
+  display: block;
+  overflow: hidden;
+  color: var(--text-sea-shell, #f0f0f0);
+  text-overflow: ellipsis;
+  font-family: Tajawal;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.character-abilities .users-info .user-stats .stats-pane {
+  display: grid;
+  column-gap: 16px;
+  grid-column: auto;
+}
+
+.character-abilities .users-info .user-stats .stats-pane .item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.character-abilities .users-info .user-stats .stats-pane .item span {
+  display: flex;
+  background: rgba(240, 240, 240, 0.24);
+  backdrop-filter: blur(10px);
+  align-items: center;
+  justify-content: center;
+}
+
+.character-abilities .users-info .user-stats .stats-pane .item span.score {
+  color: var(--text-sea-shell, #f0f0f0);
+  font-family: Tajawal;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  min-height: 58px;
+}
+
+.character-abilities .users-info .user-stats .stats-pane .item span.label {
+  color: var(--text-sea-shell, #f0f0f0);
+  font-family: Tajawal;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 6px 11px;
 }
