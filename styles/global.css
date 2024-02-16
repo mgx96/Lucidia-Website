@@ -780,6 +780,7 @@ END: logged-in user information section in navigation
   backdrop-filter: blur(10px);
   align-items: center;
   justify-content: center;
+  letter-spacing: normal;
 }
 
 .sub-dashboard .users-info .user-stats .stats-pane .item span.score {
