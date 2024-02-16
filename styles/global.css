@@ -2,6 +2,7 @@
   line-height: 1;
   font-family: Tajawal;
   outline: none;
+  box-sizing: border-box;
 }
 
 body {
@@ -178,7 +179,7 @@ body.curse::before {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
+  line-height: 26px;
   padding: 5px 0;
 }
 
@@ -456,90 +457,86 @@ h2 {
   line-height: 1;
 }
 
-/* After - Login */
-.navbar-nav .balance {
-  margin-top: 4px;
-  padding-left: 8px;
-  min-width: 71px;
-  max-height: 32px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 3px;
+/** --------------------------------------------------------- **\
+START: logged-in user information section in navigation
+\** --------------------------------------------------------- **/
+
+.gray-blur {
   background: rgba(240, 240, 240, 0.24);
   backdrop-filter: blur(10px);
+  padding: 6px 8px;
 }
 
-.navbar-nav .balance img {
-  width: 20px;
-  height: 20px;
-}
-
-.navbar-nav .balance span {
-  margin-left: 2px;
+.navbar .navbar-nav .coin {
+  display: flex;
+  column-gap: 4px;
+  flex-direction: row;
   color: #f0f0f0;
   font-family: Tajawal;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
 }
 
-.purchase {
-  margin-top: 4px;
-  margin-left: 4px;
-  padding: 8px 5px;
+.navbar .navbar-nav .coin .balance {
   display: flex;
   flex-direction: row;
-  min-width: 25px;
-  max-height: 32px;
-  background: rgba(240, 240, 240, 0.24);
-  backdrop-filter: blur(10px);
   align-items: center;
+  column-gap: 4px;
 }
 
-.purchase span {
-  margin-left: 3px;
-  color: #f0f0f0;
-  font-family: Tajawal;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+.navbar .navbar-nav .coin .add {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
 }
 
-.avatar img {
+.navbar .navbar-nav .user {
+  display: flex;
+  flex-direction: row;
+  column-gap: 12px;
+}
+
+.navbar .navbar-nav .user .avatar {
   width: 36px;
   height: 36px;
-  margin-left: 20px;
-  margin-top: 2px;
 }
 
-.userinfo {
-  margin-left: 12px;
-  margin-top: 2px;
-}
-
-.userinfo .username {
+.navbar .navbar-nav .user .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   color: #f0f0f0;
   font-family: Tajawal;
+  font-style: normal;
+  line-height: normal;
+}
+
+.navbar .navbar-nav .user .info .name {
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
 
-.userinfo .username .red {
+.red-bullet::after {
+  display: block;
+  background: #e24f4e;
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  margin: 4px;
 }
 
-.userinfo .wallet-address {
-  color: #f0f0f0;
-  font-family: Tajawal;
+.navbar .navbar-nav .user .info .wallet-address {
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
+
+/** --------------------------------------------------------- **\
+END: logged-in user information section in navigation
+\** --------------------------------------------------------- **/
 
 .logout {
   position: fixed;
