@@ -106,7 +106,8 @@ body.desert_bg3 {
   background-size: 100%;
 }
 
-body.sandstorm_bg1 {
+body.sandstorm_bg1,
+body.educational-portal {
   background: linear-gradient(359deg, rgba(13, 13, 13, 0.8) 26.84%, rgba(0, 0, 0, 0) 72.25%),
     linear-gradient(0deg, rgba(13, 13, 13, 0.52) 0%, rgba(13, 13, 13, 0.52) 100%),
     url(../images/backgrounds/sandstorm_01.jpg) no-repeat top, #0d0d0d -24.828px -51.5px / 103.448% 115.147% no-repeat;
@@ -133,7 +134,8 @@ body.sandstorm_bg3 {
 body.dao::before,
 body.home::before,
 body.games::before,
-body.DevTools::before {
+body.DevTools::before,
+body.educational-portal:before {
   display: block;
   content: '';
   position: fixed;
