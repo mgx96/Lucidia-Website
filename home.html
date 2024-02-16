@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="plugins/fontawesome-free-6.5.1-web/css/all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" />
     <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/home.css" />
   </head>
   <body class="home">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -26,129 +27,237 @@
         </button>
         <div class="container collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="./home.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" aria-current="page" href="./games.html">Games</a></li>
-            <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Tournaments</a></li>
-            <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Marketplace</a></li>
-            <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Dev Tools</a></li>
-            <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Education Portal</a></li>
-            <li class="nav-item"><a class="nav-link" aria-current="page" href="#">DAO</a></li>
+            <li class="nav-item"><a class="nav-link active" href="./home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="./games.html">Games</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Tournaments</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Marketplace</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Dev Tools</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Education Portal</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">DAO</a></li>
           </ul>
-          <ul class="navbar-nav d-flex">
+          <ul class="navbar-nav d-flex navbar-login">
             <li class="nav-item">
-              <a class="nav-link locale" aria-current="page" href="#"
+              <a class="nav-link locale" href="#"
                 ><img src="./images/flags/us.svg" alt="Locale" /> Eng
                 <img src="./images/icons/arrow-down.svg" alt="arrow-down"
               /></a>
             </li>
-            <li class="balance"><img src="./images/coin.png" alt="coin" /><span>0.00</span></li>
-            <li class="plus">+</li>
-            <li class="avatar"><img src="./images/avatar/user.jpg" alt="avatar" /></li>
-            <li class="userinfo">
-              <span class="username">Sofia Turner</span>
-              <div class="red"></div>
-              <span class="wallet-address">0x3082...5681</span>
+            <li class="nav-item coin">
+              <div class="balance gray-blur"><img src="./images/coin.png" alt="coin" /><span>0.00</span></div>
+              <a href="#" class="add gray-blur">+</a>
+            </li>
+            <li class="nav-item user">
+              <img class="avatar" src="./images/avatar/user.jpg" alt="avatar" />
+              <div class="info">
+                <span class="name red-bullet d-flex">Sofia Turner</span>
+                <span class="wallet-address">0x3082...5681</span>
+              </div>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <div class="container">
-      <div class="advert">
-        <img src="images/adverts/games.jpg" alt="advert" width="100%" />
-        <div class="device-desktop"></div>
-        <div class="title"><img src="images/adverts/games-title.png" alt="title" /></div>
-        <div class="description">
-          Zombie Outbreak is an action/adventure/survival game set in a post-apocalyptic world overrun by zombies.
-          Collect weapon, bullet, and fuel props. Travel throuhg open-world environment with different biomes.
-        </div>
-        <a class="default-button" href="#">view game</a>
+      <div class="welcome">
+        <h1>Welcome to Lucidia</h1>
+        <p>
+          The frontier of gaming innovation in the Middle East. We're redefining the gaming landscape by integrating the
+          thrilling world of traditional gaming with the boundless possibilities of blockchain technology. Discover a
+          new era of gaming with us.
+        </p>
       </div>
-      <div></div>
-      <div class="game-sections">
-        <h2>Explore Our Ecosystem</h2>
-        <span class="description"
-          >Dive into our diverse platforms designed for gamers, developers, and creators. From the Developer Marketplace
-          to the NFT Integration Toolkit, each solution is crafted to enhance your gaming experience and development
-          journey.</span
-        >
+      <h2>Explore Our Ecosystem</h2>
+      <p>
+        Dive into our diverse platforms designed for gamers, developers, and creators. From the Developer Marketplace to
+        the NFT Integration Toolkit, each solution is crafted to enhance your gaming experience and development journey.
+      </p>
+      <div class="ecosystem section">
         <div class="row">
           <div class="col-md-3">
-            <a class="game-item" href="">
-              <div class="image">
-                <img class="img-fluid" src="images/ecosystem/middle-eastern.svg" alt="ecosystem" />
-              </div>
-              <span class="title">Marketplace for Middle-Eastern Developers</span>
-              <span class="details">A culturally tailored marketplace fostering collaboration among de...</span>
+            <a href="#">
+              <div class="image" style="background-image: url(images/home/ecosystem/01.png)"></div>
+              <h3>Marketplace for Middle-Eastern Developers</h3>
+              <p>A culturally tailored marketplace fostering collaboration among developers in the Middle East.</p>
             </a>
           </div>
           <div class="col-md-3">
-            <a class="game-item" href="#">
-              <div class="image">
-                <img class="img-fluid" src="images/ecosystem/ingame-assets.svg" alt="ecosystem" />
-              </div>
-              <span class="title">Marketplace for In-Game Assets and Code</span>
-              <span class="details">A hub for trading game assets and code, enhancing resource sharing...</span>
+            <a href="#">
+              <div class="image" style="background-image: url(images/home/ecosystem/02.png)"></div>
+              <h3>Marketplace for Middle-Eastern Developers</h3>
+              <p>A culturally tailored marketplace fostering collaboration among developers in the Middle East.</p>
             </a>
           </div>
           <div class="col-md-3">
-            <a class="game-item" href="#">
-              <div class="image">
-                <img class="img-fluid" src="images/ecosystem/nft-integration.svg" alt="ecosystem" />
-              </div>
-              <span class="title">Comprehensive NFT Integration Toolkit</span>
-              <span class="details">Tools simplifying NFT integration into games, bridging creativity an...</span>
+            <a href="#">
+              <div class="image" style="background-image: url(images/home/ecosystem/01.png)"></div>
+              <h3>Marketplace for Middle-Eastern Developers</h3>
+              <p>A culturally tailored marketplace fostering collaboration among developers in the Middle East.</p>
             </a>
           </div>
           <div class="col-md-3">
-            <a class="game-item" href="./games/sandstorm_01.html">
-              <div class="image">
-                <img class="img-fluid" src="images/ecosystem/inventory.svg" alt="ecosystem" />
-              </div>
-              <span class="title">Built-in Game Inventory System</span>
-              <span class="details">A seamless solution for managing in-game inventories and integrai...</span>
+            <a href="#">
+              <div class="image" style="background-image: url(images/home/ecosystem/01.png)"></div>
+              <h3>Marketplace for Middle-Eastern Developers</h3>
+              <p>A culturally tailored marketplace fostering collaboration among developers in the Middle East.</p>
             </a>
           </div>
         </div>
       </div>
-      <div class="game-sections">
-        <h2>Top Earning Play To Earn Games</h2>
+      <h2>Stay Updated</h2>
+      <p>
+        Be the first to know about our latest breakthroughs, product launches, and updates. Lucidia is constantly
+        evolving, and here's where you'll find all the exciting news
+      </p>
+      <div class="stay-updated section">
         <div class="row">
-          <div class="col-md-3">
-            <a class="game-item" href="./games/desertwarriors_01.html">
-              <div class="image">
-                <img class="img-fluid" src="images/featured-games/03.jpg" alt="featured-games" />
-                <div class="device-desktop"></div>
+          <div class="col-md-10">
+            <div class="row">
+              <div class="col-md-3">
+                <a href="#">
+                  <div class="image" style="background-image: url(images/home/icon.svg)"></div>
+                  <h4>New car pack update:</h4>
+                  <ul>
+                    <li>Audi RS7</li>
+                    <li>BMW M3</li>
+                  </ul>
+                  <div class="game">
+                    <img src="images/home/stay-updated/01.jpg" alt="game" />
+                    Sandstorm Racing
+                  </div>
+                </a>
               </div>
-              <span class="title">Desert Warriors</span>
-            </a>
+              <div class="col-md-3">
+                <a href="#">
+                  <div class="image" style="background-image: url(images/home/icon.svg)"></div>
+                  <h4>New gun pack update:</h4>
+                  <ul>
+                    <li>AK47</li>
+                    <li>AWM</li>
+                  </ul>
+                  <div class="game">
+                    <img src="images/home/stay-updated/02.jpg" alt="game" />
+                    Desert Dominion
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a href="#">
+                  <div class="image" style="background-image: url(images/home/icon.svg)"></div>
+                  <h4>New car pack update:</h4>
+                  <ul>
+                    <li>Audi RS7</li>
+                    <li>BMW M3</li>
+                  </ul>
+                  <div class="game">
+                    <img src="images/home/stay-updated/01.jpg" alt="game" />
+                    Sandstorm Racing
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a href="#">
+                  <div class="image" style="background-image: url(images/home/icon.svg)"></div>
+                  <h4>New gun pack update:</h4>
+                  <ul>
+                    <li>AK47</li>
+                    <li>AWM</li>
+                  </ul>
+                  <div class="game">
+                    <img src="images/home/stay-updated/02.jpg" alt="game" />
+                    Desert Dominion
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="col-md-3">
-            <a class="game-item" href="./games/curseofthepharaos_01.html">
-              <div class="image">
-                <img class="img-fluid" src="images/featured-games/01.jpg" alt="featured-games" />
-                <div class="device-desktop"></div>
+        </div>
+      </div>
+      <h2>Success in Action</h2>
+      <p>
+        Read about how game studios and independent developers are leveraging Lucidia's ecosystem to create
+        groundbreaking games and forge new paths in the gaming industry.
+      </p>
+      <div class="success-in-action section">
+        <ul>
+          <li>
+            <div class="background" style="background-image: url(images/home/success-in-action/01.jpg)">
+              <img
+                class="character"
+                src="images/home/success-in-action/01.png"
+                alt="character"
+                style="right: -14px; bottom: -23px"
+              />
+            </div>
+          </li>
+          <li>
+            <div class="background" style="background-image: url(images/home/success-in-action/02.jpg)">
+              <img
+                class="character"
+                src="images/home/success-in-action/02.png"
+                alt="character"
+                style="right: 53px; bottom: 0"
+              />
+            </div>
+          </li>
+        </ul>
+      </div>
+      <h2>Join the Community</h2>
+      <p>
+        Engage with a vibrant community of gamers and developers. Participate in thrilling tournaments, get featured in
+        our community highlights, and connect with like-minded individuals.
+      </p>
+      <div class="community section">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="blog">
+              <div class="image" style="background-image: url(images/home/community/01.jpg)"></div>
+              <div class="content">
+                <h3>Pharaoh's Plague</h3>
+                <div class="authors">
+                  <ul>
+                    <li><img src="images/home/community/users/01.jpg" alt="author" /></li>
+                    <li><img src="images/home/community/users/02.jpg" alt="author" /></li>
+                    <li><img src="images/home/community/users/03.jpg" alt="author" /></li>
+                    <li class="count">100k+</li>
+                  </ul>
+                  <a href="#">Join us</a>
+                </div>
               </div>
-              <span class="title">Curse Of The Pharaoh</span>
-            </a>
+            </div>
           </div>
-          <div class="col-md-3">
-            <a class="game-item" href="./games/sandstormracers_01.html">
-              <div class="image">
-                <img class="img-fluid" src="images/featured-games/04.jpg" alt="featured-games" />
-                <div class="device-desktop"></div>
+          <div class="col-md-4">
+            <div class="blog">
+              <div class="image" style="background-image: url(images/home/community/02.jpg)"></div>
+              <div class="content">
+                <h3>Sandstorm Racing</h3>
+                <div class="authors">
+                  <ul>
+                    <li><img src="images/home/community/users/01.jpg" alt="author" /></li>
+                    <li><img src="images/home/community/users/02.jpg" alt="author" /></li>
+                    <li><img src="images/home/community/users/03.jpg" alt="author" /></li>
+                    <li class="count">100k+</li>
+                  </ul>
+                  <a href="#">Join us</a>
+                </div>
               </div>
-              <span class="title">Sandstorm Racers</span>
-            </a>
+            </div>
           </div>
-          <div class="col-md-3">
-            <a class="game-item" href="./games/cryptocraft_01.html">
-              <div class="image">
-                <img class="img-fluid" src="images/featured-games/03.jpg" alt="featured-games" />
-                <div class="device-desktop"></div>
+          <div class="col-md-4">
+            <div class="blog">
+              <div class="image" style="background-image: url(images/home/community/03.jpg)"></div>
+              <div class="content">
+                <h3>Arabian FPS</h3>
+                <div class="authors">
+                  <ul>
+                    <li><img src="images/home/community/users/01.jpg" alt="author" /></li>
+                    <li><img src="images/home/community/users/02.jpg" alt="author" /></li>
+                    <li><img src="images/home/community/users/03.jpg" alt="author" /></li>
+                    <li class="count">100k+</li>
+                  </ul>
+                  <a href="#">Join us</a>
+                </div>
               </div>
-              <span class="title">Cryptocraft</span>
-            </a>
+            </div>
           </div>
         </div>
       </div>

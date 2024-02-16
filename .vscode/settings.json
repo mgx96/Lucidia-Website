@@ -24,5 +24,6 @@
     "editor.formatOnSave": true
   },
   "prettier.resolveGlobalModules": true,
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "css.styleSheets": ["styles/**/*.css"]
 }
