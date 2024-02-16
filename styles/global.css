@@ -1,3 +1,18 @@
+@font-face {
+  font-family: CallofOpsDutyII;
+  src: url('fonts/call-of-ops-duty-ii.otf') format('opentype');
+}
+
+@font-face {
+  font-family: PerfectDark;
+  src: url('./fonts/perfect-dark.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: GhostClanItalic;
+  src: url('fonts/ghostclanital.ttf') format('truetype');
+}
+
 * {
   line-height: 1;
   font-family: Tajawal;
@@ -567,29 +582,30 @@ END: logged-in user information section in navigation
   line-height: normal;
 }
 
-.curse-advert.after-login {
+.after-login {
   display: flex;
   flex-direction: row;
   align-items: left;
-  column-gap: 31px;
+  column-gap: 100px;
 }
 
 .main-advert {
   max-width: 492px;
 }
 
-.character-abilities {
+.sub-dashboard {
   display: flex;
   flex-direction: row;
   column-gap: 20px;
   max-width: 709px;
 }
 
-.character-abilities .users-info {
+.sub-dashboard .users-info {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   row-gap: 8px;
-  max-width: 210px;
+  flex-basis: 210px;
 }
 
 .blur-pane {
@@ -599,20 +615,20 @@ END: logged-in user information section in navigation
   padding-right: 18px;
 }
 
-.character-abilities .users-info .user-friends {
+.sub-dashboard .users-info .user-friends {
   display: flex;
   flex-direction: column;
   row-gap: 11px;
 }
 
-.character-abilities .users-info .user-friends .user-level {
+.sub-dashboard .users-info .user-friends .user-level {
   display: flex;
   flex-direction: row;
   column-gap: 12px;
   margin-bottom: 17px;
 }
 
-.character-abilities .users-info .user-friends .user-level span {
+.sub-dashboard .users-info .user-friends .user-level span {
   overflow: hidden;
   color: #f0f0f0;
   text-overflow: ellipsis;
@@ -624,13 +640,13 @@ END: logged-in user information section in navigation
   line-height: normal;
 }
 
-.character-abilities .users-info .user-friends .user-level .level {
+.sub-dashboard .users-info .user-friends .user-level .level {
   display: flex;
   flex-direction: row;
   column-gap: 8px;
 }
 
-.character-abilities .users-info .user-friends .user-level .level .level-progress {
+.sub-dashboard .users-info .user-friends .user-level .level .level-progress {
   margin-top: 5px;
   background: rgba(240, 240, 240, 0.24);
   backdrop-filter: blur(10px);
@@ -638,7 +654,7 @@ END: logged-in user information section in navigation
   max-height: 4px;
 }
 
-.character-abilities .users-info .user-friends .user-level .level span {
+.sub-dashboard .users-info .user-friends .user-level .level span {
   margin-top: 3px;
   color: #f0f0f0;
   font-family: Tajawal;
@@ -647,14 +663,14 @@ END: logged-in user information section in navigation
   font-weight: 400;
 }
 
-.character-abilities .users-info .user-friends .add-friend {
+.sub-dashboard .users-info .user-friends .add-friend {
   display: flex;
   align-items: start;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.character-abilities .users-info .user-friends .add-friend span {
+.sub-dashboard .users-info .user-friends .add-friend span {
   overflow: hidden;
   color: #f0f0f0;
   text-overflow: ellipsis;
@@ -664,7 +680,7 @@ END: logged-in user information section in navigation
   font-weight: 700;
 }
 
-.character-abilities .users-info .user-friends .add-friend .plus {
+.sub-dashboard .users-info .user-friends .add-friend .plus {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -685,20 +701,20 @@ END: logged-in user information section in navigation
   column-gap: 8px;
 }
 
-.friend-list .friend-item {
+.friend-list .item {
   display: flex;
   flex-direction: row;
   column-gap: 4px;
 }
 
-.friend-list .friend-item .friend-info {
+.friend-list .item .friend-info {
   display: flex;
   flex-direction: column;
 }
 
-.friend-list .friend-item .friend-info .name {
+.friend-list .item .friend-info .name {
   overflow: hidden;
-  color: var(--text-sea-shell, #f0f0f0);
+  color: #f0f0f0;
   text-overflow: ellipsis;
   font-family: Tajawal;
   font-size: 8px;
@@ -707,8 +723,8 @@ END: logged-in user information section in navigation
   line-height: normal;
 }
 
-.friend-list .friend-item .friend-info .level {
-  color: var(--text-sea-shell, #f0f0f0);
+.friend-list .item .friend-info .level {
+  color: #f0f0f0;
   font-family: Tajawal;
   font-size: 6px;
   font-style: normal;
@@ -716,26 +732,26 @@ END: logged-in user information section in navigation
   line-height: normal;
 }
 
-.character-abilities .users-info .top-player,
-.character-abilities .users-info .user-stats {
+.sub-dashboard .users-info .top-player,
+.sub-dashboard .users-info .user-stats {
   display: flex;
   flex-direction: column;
   row-gap: 11px;
 }
 
-.character-abilities .users-info .top-player {
+.sub-dashboard .users-info .top-player {
   padding: 8px 16px;
 }
 
-.character-abilities .users-info .user-stats {
+.sub-dashboard .users-info .user-stats {
   padding: 11px 16px;
 }
 
-.character-abilities .users-info .top-player .title,
-.character-abilities .users-info .user-stats .title {
+.sub-dashboard .users-info .top-player .title,
+.sub-dashboard .users-info .user-stats .title {
   display: block;
   overflow: hidden;
-  color: var(--text-sea-shell, #f0f0f0);
+  color: #f0f0f0;
   text-overflow: ellipsis;
   font-family: Tajawal;
   font-size: 12px;
@@ -744,19 +760,21 @@ END: logged-in user information section in navigation
   line-height: normal;
 }
 
-.character-abilities .users-info .user-stats .stats-pane {
-  display: grid;
+.sub-dashboard .users-info .user-stats .stats-pane {
+  display: flex;
+  flex-direction: row;
   column-gap: 16px;
-  grid-column: auto;
 }
 
-.character-abilities .users-info .user-stats .stats-pane .item {
+.sub-dashboard .users-info .user-stats .stats-pane .item {
   display: flex;
   flex-direction: column;
   row-gap: 8px;
+  flex-grow: 1;
+  flex-basis: 100%;
 }
 
-.character-abilities .users-info .user-stats .stats-pane .item span {
+.sub-dashboard .users-info .user-stats .stats-pane .item span {
   display: flex;
   background: rgba(240, 240, 240, 0.24);
   backdrop-filter: blur(10px);
@@ -764,8 +782,8 @@ END: logged-in user information section in navigation
   justify-content: center;
 }
 
-.character-abilities .users-info .user-stats .stats-pane .item span.score {
-  color: var(--text-sea-shell, #f0f0f0);
+.sub-dashboard .users-info .user-stats .stats-pane .item span.score {
+  color: #f0f0f0;
   font-family: Tajawal;
   font-size: 20px;
   font-style: normal;
@@ -774,12 +792,141 @@ END: logged-in user information section in navigation
   min-height: 58px;
 }
 
-.character-abilities .users-info .user-stats .stats-pane .item span.label {
-  color: var(--text-sea-shell, #f0f0f0);
+.sub-dashboard .users-info .user-stats .stats-pane .item span.label {
+  color: #f0f0f0;
   font-family: Tajawal;
   font-size: 10px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   padding: 6px 11px;
+}
+
+.sub-dashboard .detail-scores {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.sub-dashboard .detail-scores h3 {
+  padding: 10px 9px 7px 9px;
+  margin: 0;
+  color: var(--text-sea-shell, #f0f0f0);
+  font-family: CallofOpsDutyII;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-dashboard .detail-scores .scores {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  margin: 0;
+  list-style: none;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.sub-dashboard .detail-scores .scores li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 8px;
+  flex-wrap: nowrap;
+  color: #f0f0f0;
+  font-family: Tajawal;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.sub-dashboard .detail-scores .scores li .item {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 29px;
+}
+
+.sub-dashboard .detail-scores .scores li .item span {
+  white-space: nowrap;
+}
+
+.sub-dashboard .detail-scores .scores li .item span.label {
+  text-transform: capitalize;
+}
+
+.sub-dashboard .curse.character {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 0px;
+  padding-right: 43px;
+}
+
+.sub-dashboard .curse.character h3 {
+  text-transform: uppercase;
+  color: #f0f0f0;
+  text-align: left;
+  font-family: CallofOpsDutyII;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sub-dashboard .curse.character .soldier {
+  margin-left: 20px;
+  background-image: url(../images/adverts/curse_soldier.svg);
+  background-size: cover;
+  background-position: center;
+  width: 125px;
+  height: 270px;
+}
+
+.clipeffect {
+  clip-path: polygon(0 0, 94% 0, 100% 6%, 100% 100%, 0 100%);
+  overflow: hidden;
+}
+
+.sub-dashboard .desert.character {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px 0px 10px;
+}
+
+.sub-dashboard .desert-map h3,
+.sub-dashboard .desert.character h3 {
+  text-transform: uppercase;
+  color: #f0f0f0;
+  margin: 0px;
+  font-family: PerfectDark;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sub-dashboard .desert.character .soldier {
+  background-image: url(../images/adverts/desert_soldier.svg);
+  background-size: cover;
+  background-position: center;
+  width: 190px;
+  height: 329px;
+}
+
+.sub-dashboard .desert-map {
+  background-image: url(../images/adverts/desert_maps.svg);
+  background-size: cover;
+  background-position: center;
+  width: 210px;
+  height: 376px;
+  padding: 20px 12px;
 }
