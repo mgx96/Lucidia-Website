@@ -301,10 +301,6 @@ body.curse::before {
   margin-bottom: 36px;
 }
 
-.player-status .default-button {
-  flex-direction: row;
-}
-
 .advert .device-desktop,
 .game-sections .device-desktop {
   background: rgba(30, 30, 30, 0.92);
@@ -933,4 +929,8 @@ END: logged-in user information section in navigation
   width: 210px;
   height: 376px;
   padding: 20px 12px;
+}
+
+.desert-advert .player-status {
+  margin-top: 28px;
 }
