@@ -130,6 +130,7 @@ body.sandstorm_bg3 {
   background-size: 100%;
 }
 
+body.dao::before,
 body.home::before,
 body.games::before,
 body.DevTools::before {
