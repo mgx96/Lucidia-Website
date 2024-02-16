@@ -26,7 +26,8 @@ body {
 }
 
 body.home,
-body.games {
+body.games,
+body.DevTools {
   background: linear-gradient(0deg, rgba(13, 13, 13, 0.52) 0%, rgba(13, 13, 13, 0.52) 100%),
     url(../images/backgrounds/games.jpg) no-repeat top, #0d0d0d 50% / cover no-repeat;
   background-attachment: scroll;
@@ -130,7 +131,8 @@ body.sandstorm_bg3 {
 }
 
 body.home::before,
-body.games::before {
+body.games::before,
+body.DevTools::before {
   display: block;
   content: '';
   position: fixed;
