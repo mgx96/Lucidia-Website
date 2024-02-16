@@ -695,6 +695,7 @@ END: logged-in user information section in navigation
   font-size: 8px;
   font-style: normal;
   font-weight: 500;
+  text-decoration: none;
 }
 
 .friend-list {
