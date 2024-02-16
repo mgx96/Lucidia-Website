@@ -11,7 +11,7 @@
 .educational-portal p {
   color: #f0f0f0;
   font-family: Tajawal;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -32,7 +32,7 @@
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
-  line-height: 1;
+  line-height: normal;
   margin-bottom: 16px;
   width: 500px;
 }
@@ -41,6 +41,8 @@
   margin: 0;
   font-size: 20px;
 }
+
+.joinus:hover,
 .joinus {
   background: url('../images/buttons/joinus.svg') no-repeat center;
   display: flex;
@@ -49,13 +51,13 @@
   width: 262px;
   height: 36px;
   margin-top: 100px;
-  font-family: Tajawal;
   font-size: 16px;
   font-style: normal;
   text-decoration: none;
-  line-height: none;
   color: #f0f0f0;
+  text-decoration: none;
 }
+
 .gamer {
   background: rgba(240, 240, 240, 0.24);
   backdrop-filter: blur(10px);
@@ -63,11 +65,13 @@
   width: 570px;
   height: 582px;
 }
+
 .coming,
 .about {
   background: rgba(240, 240, 240, 0.24);
   backdrop-filter: blur(10px);
-  padding: 20px 132px 30px 40px;
+  padding: 28px 33px 66px 28px;
+  clip-path: polygon(0 0, 85% 0, 100% 17.2%, 100% 100%, 0 100%);
 }
 
 .container.educational-advert {
@@ -75,6 +79,7 @@
   flex-direction: row;
   column-gap: 122px;
   justify-content: center;
+  margin-top: 15px;
 }
 
 .educational-portal .portal {
