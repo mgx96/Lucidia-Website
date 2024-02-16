@@ -4,15 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sandstorm Racers</title>
-    <link rel="stylesheet" href="../plugins/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../plugins/fontawesome-free-6.5.1-web/css/all.min.css" />
+    <link rel="stylesheet" href="../../plugins/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../plugins/fontawesome-free-6.5.1-web/css/all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" />
-    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../../styles/global.css" />
+    <link rel="stylesheet" href="../../styles/after-login/sandstorm.css" />
   </head>
-  <body class="sandstorm_bg2">
+  <body class="sandstorm_bg1">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="../images/logo.svg" alt="logo" /></a>
+        <a class="navbar-brand" href="#"><img src="../../images/logo.svg" alt="logo" /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -27,7 +28,7 @@
         <div class="container collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="../games.html">Games</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="../../games.html">Games</a></li>
             <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Tournaments</a></li>
             <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Marketplace</a></li>
             <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Dev Tools</a></li>
@@ -37,8 +38,8 @@
           <ul class="navbar-nav d-flex">
             <li class="nav-item">
               <a class="nav-link locale" aria-current="page" href="#"
-                ><img src="../images/flags/us.svg" alt="Locale" /> Eng
-                <img src="../images/icons/arrow-down.svg" alt="arrow-down"
+                ><img src="../../images/flags/us.svg" alt="Locale" /> Eng
+                <img src="../../images/icons/arrow-down.svg" alt="arrow-down"
               /></a>
             </li>
             <li class="nav-item"><a class="default-button" aria-current="page" href="#">Log-in</a></li>
@@ -47,36 +48,51 @@
       </div>
     </nav>
     <div class="container">
-      <div class="sandstorm-advert">
-        <img src="../images/adverts/stormracer.svg" class="sandstorm-title" alt="advert" />
-        <div class="player-status">
-          <span
-            ><img class="server" src="../images/icons/server.svg" alt="server" /> 1 Server | 1 Available
-            &nbsp;&nbsp;<img src="../images/icons/peoples.svg" alt="people" /> 0 Player</span
-          >
+      <div class="sandstorm-advert after-login">
+        <div class="main-advert">
+          <img src="../../images/adverts/stormracer_01.svg" class="sandstorm-title" alt="advert" />
+          <div class="player-status">
+            <span
+              ><img class="server" src="../../images/icons/server.svg" alt="server" /> 1 Server | 1 Available
+              &nbsp;&nbsp;<img src="../../images/icons/peoples.svg" alt="people" /> 0 Player</span
+            >
+          </div>
+          <div class="go-play">
+            <a class="default-button" href="#">Play game</a>
+            <div class="detail-box">
+              <span class="description">Open-World Racing Simulation</span>
+            </div>
+          </div>
+          <div class="game-menu row">
+            <div class="col-sm-3">
+              <a class="item" href="./sandstorm_01.html">
+                <div class="image active">
+                  <img class="img-fluid" src="../../images/latest_news/sandstorm/01.jpg" alt="featured-games" />
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-3">
+              <a class="item" href="./sandstorm_02.html">
+                <div class="image">
+                  <img class="img-fluid" src="../../images/latest_news/sandstorm/02.jpg" alt="featured-games" />
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-3">
+              <a class="item" href="./sandstorm_03.html">
+                <div class="image">
+                  <img class="img-fluid" src="../../images/latest_news/sandstorm/03.jpg" alt="featured-games" />
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
-        <a class="default-button" href="#">Play game</a>
-        <div class="game-menu row">
-          <div class="col-sm-2">
-            <a class="item" href="./sandstorm_01.html">
-              <div class="image">
-                <img class="img-fluid" src="../images/latest_news/sandstorm/01.jpg" alt="featured-games" />
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-2">
-            <a class="item" href="./sandstorm_02.html">
-              <div class="image active">
-                <img class="img-fluid" src="../images/latest_news/sandstorm/02.jpg" alt="featured-games" />
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-2">
-            <a class="item" href="./sandstorm_03.html">
-              <div class="image">
-                <img class="img-fluid" src="../images/latest_news/sandstorm/03.jpg" alt="featured-games" />
-              </div>
-            </a>
+        <div>
+          <div class="sub-dashboard">
+            <div class="mission">
+              <h3 class="cars">cars</h3>
+              <h3 class="tracks">tracks</h3>
+            </div>
           </div>
         </div>
       </div>
@@ -86,7 +102,7 @@
           <div class="col-md-3">
             <a class="live-game-item" href="./sandstorm_01.html">
               <div class="image">
-                <img class="img-fluid" src="../images/latest_news/sandstorm/01.jpg" alt="featured-games" />
+                <img class="img-fluid" src="../../images/latest_news/sandstorm/01.jpg" alt="featured-games" />
               </div>
               <div class="game-description">
                 <span class="title">Cliff Biome</span>
@@ -97,7 +113,7 @@
           <div class="col-md-3">
             <a class="live-game-item" href="./sandstorm_02.html">
               <div class="image">
-                <img class="img-fluid" src="../images/latest_news/sandstorm/02.jpg" alt="featured-games" />
+                <img class="img-fluid" src="../../images/latest_news/sandstorm/02.jpg" alt="featured-games" />
               </div>
               <div class="game-description">
                 <span class="title">Lightning Strike! Strike Again</span>
@@ -108,7 +124,7 @@
           <div class="col-md-3">
             <a class="live-game-item" href="./sandstorm_03.html">
               <div class="image">
-                <img class="img-fluid" src="../images/latest_news/sandstorm/03.jpg" alt="featured-games" />
+                <img class="img-fluid" src="../../images/latest_news/sandstorm/03.jpg" alt="featured-games" />
               </div>
               <div class="game-description">
                 <span class="title">The Power Of Shovel</span>
@@ -119,7 +135,7 @@
           <div class="col-md-3">
             <a class="live-game-item" href="./sandstorm_01.html">
               <div class="image">
-                <img class="img-fluid" src="../images/latest_news/sandstorm/01.jpg" alt="featured-games" />
+                <img class="img-fluid" src="../../images/latest_news/sandstorm/01.jpg" alt="featured-games" />
               </div>
               <div class="game-description">
                 <span class="title">Cliff Biome</span>
@@ -132,19 +148,22 @@
     </div>
     <ul class="social-links">
       <li>
-        <a href="#"><img src="../images/socials/telegram.svg" alt="telegram" /></a>
+        <a href="#"><img src="../../images/socials/telegram.svg" alt="telegram" /></a>
       </li>
       <li>
-        <a href="#"><img src="../images/socials/discord.svg" alt="discord" /></a>
+        <a href="#"><img src="../../images/socials/discord.svg" alt="discord" /></a>
       </li>
       <li>
-        <a href="#"><img src="../images/socials/twitter.svg" alt="twitter" /></a>
+        <a href="#"><img src="../../images/socials/twitter.svg" alt="twitter" /></a>
       </li>
       <li>
-        <a href="#"><img src="../images/socials/website.svg" alt="website" /></a>
+        <a href="#"><img src="../../images/socials/website.svg" alt="website" /></a>
       </li>
     </ul>
-    <script src="../plugins/jquery.min.js"></script>
-    <script src="../plugins/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <div class="logout">
+      <a href="../../games.html"><img src="../../images/icons/logout.svg" alt="logout" /></a>
+    </div>
+    <script src="../../plugins/jquery.min.js"></script>
+    <script src="../../plugins/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
   </body>
 </html>
