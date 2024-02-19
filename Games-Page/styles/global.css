@@ -1,0 +1,480 @@
+* {
+  line-height: 1;
+  font-family: Tajawal;
+  outline: none;
+}
+
+body {
+  padding-bottom: 100px;
+}
+
+body.games {
+  background:
+    linear-gradient(0deg, rgba(13, 13, 13, 0.52) 0%, rgba(13, 13, 13, 0.52) 100%),
+    url(../images/backgrounds/games.jpg) no-repeat top,
+    #0d0d0d 50% / cover no-repeat;
+  background-attachment: scroll;
+  background-size: 100%;
+}
+
+body.curse {
+  background:
+    linear-gradient(359deg, rgba(13, 13, 13, 0.8) 26.84%, rgba(0, 0, 0, 0) 72.25%),
+    linear-gradient(0deg, rgba(13, 13, 13, 0.52) 0%, rgba(13, 13, 13, 0.52) 100%),
+    url(../images/backgrounds/games.jpg) no-repeat top,
+    #0d0d0d -24.828px -51.5px / 103.448% 115.147% no-repeat;
+  background-attachment: scroll;
+  background-size: 100%;
+}
+
+body.curse_bg1 {
+  background:
+    linear-gradient(359deg, rgba(13, 13, 13, 0.8) 26.84%, rgba(0, 0, 0, 0) 72.25%),
+    linear-gradient(0deg, rgba(13, 13, 13, 0.52) 0%, rgba(13, 13, 13, 0.52) 100%),
+    url(../images/backgrounds/curse_bg01.jpg) no-repeat top,
+    #0d0d0d -24.828px -51.5px / 103.448% 115.147% no-repeat;
+  background-attachment: scroll;
+  background-size: 100%;
+}
+
+body.curse_bg2 {
+  background:
+    linear-gradient(359deg, rgba(13, 13, 13, 0.8) 26.84%, rgba(0, 0, 0, 0) 72.25%),
+    linear-gradient(0deg, rgba(13, 13, 13, 0.52) 0%, rgba(13, 13, 13, 0.52) 100%),
+    url(../images/backgrounds/curse_bg02.jpg) no-repeat top,
+    #0d0d0d -24.828px -51.5px / 103.448% 115.147% no-repeat;
+  background-attachment: scroll;
+  background-size: 100%;
+}
+
+body.crypto_bg1 {
+  background:
+    linear-gradient(359deg, rgba(13, 13, 13, 0.8) 26.84%, rgba(0, 0, 0, 0) 72.25%),
+    linear-gradient(0deg, rgba(13, 13, 13, 0.52) 0%, rgba(13, 13, 13, 0.52) 100%),
+    url(../images/backgrounds/crypto_bg01.jpg) no-repeat top,
+    #0d0d0d -24.828px -51.5px / 103.448% 115.147% no-repeat;
+  background-attachment: scroll;
+  background-size: 100%;
+}
+
+body.crypto_bg2 {
+  background:
+    linear-gradient(359deg, rgba(13, 13, 13, 0.8) 26.84%, rgba(0, 0, 0, 0) 72.25%),
+    linear-gradient(0deg, rgba(13, 13, 13, 0.52) 0%, rgba(13, 13, 13, 0.52) 100%),
+    url(../images/backgrounds/crypto_bg02.jpg) no-repeat top,
+    #0d0d0d -24.828px -51.5px / 103.448% 115.147% no-repeat;
+  background-attachment: scroll;
+  background-size: 100%;
+}
+
+body.crypto_bg3 {
+  background:
+    linear-gradient(359deg, rgba(13, 13, 13, 0.8) 26.84%, rgba(0, 0, 0, 0) 72.25%),
+    linear-gradient(0deg, rgba(13, 13, 13, 0.52) 0%, rgba(13, 13, 13, 0.52) 100%),
+    url(../images/backgrounds/crypto_bg03.jpg) no-repeat top,
+    #0d0d0d -24.828px -51.5px / 103.448% 115.147% no-repeat;
+  background-attachment: scroll;
+  background-size: 100%;
+}
+
+body.desert_bg1 {
+  background:
+    linear-gradient(359deg, rgba(13, 13, 13, 0.8) 26.84%, rgba(0, 0, 0, 0) 72.25%),
+    linear-gradient(0deg, rgba(13, 13, 13, 0.52) 0%, rgba(13, 13, 13, 0.52) 100%),
+    url(../images/backgrounds/desert_bg01.jpg) no-repeat top,
+    #0d0d0d -24.828px -51.5px / 103.448% 115.147% no-repeat;
+  background-attachment: scroll;
+  background-size: 100%;
+}
+
+body.desert_bg2 {
+  background:
+    linear-gradient(359deg, rgba(13, 13, 13, 0.8) 26.84%, rgba(0, 0, 0, 0) 72.25%),
+    linear-gradient(0deg, rgba(13, 13, 13, 0.52) 0%, rgba(13, 13, 13, 0.52) 100%),
+    url(../images/backgrounds/desert_bg02.jpg) no-repeat top,
+    #0d0d0d -24.828px -51.5px / 103.448% 115.147% no-repeat;
+  background-attachment: scroll;
+  background-size: 100%;
+}
+
+body.desert_bg3 {
+  background:
+    linear-gradient(359deg, rgba(13, 13, 13, 0.8) 26.84%, rgba(0, 0, 0, 0) 72.25%),
+    linear-gradient(0deg, rgba(13, 13, 13, 0.52) 0%, rgba(13, 13, 13, 0.52) 100%),
+    url(../images/backgrounds/desert_bg03.jpg) no-repeat top,
+    #0d0d0d -24.828px -51.5px / 103.448% 115.147% no-repeat;
+  background-attachment: scroll;
+  background-size: 100%;
+}
+
+body.sandstorm_bg1 {
+  background:
+    linear-gradient(359deg, rgba(13, 13, 13, 0.8) 26.84%, rgba(0, 0, 0, 0) 72.25%),
+    linear-gradient(0deg, rgba(13, 13, 13, 0.52) 0%, rgba(13, 13, 13, 0.52) 100%),
+    url(../images/backgrounds/sandstorm_01.jpg) no-repeat top,
+    #0d0d0d -24.828px -51.5px / 103.448% 115.147% no-repeat;
+  background-attachment: scroll;
+  background-size: 100%;
+}
+
+body.sandstorm_bg2 {
+  background:
+    linear-gradient(359deg, rgba(13, 13, 13, 0.8) 26.84%, rgba(0, 0, 0, 0) 72.25%),
+    linear-gradient(0deg, rgba(13, 13, 13, 0.52) 0%, rgba(13, 13, 13, 0.52) 100%),
+    url(../images/backgrounds/sandstorm_02.jpg) no-repeat top,
+    #0d0d0d -24.828px -51.5px / 103.448% 115.147% no-repeat;
+  background-attachment: scroll;
+  background-size: 100%;
+}
+
+body.sandstorm_bg3 {
+  background:
+    linear-gradient(359deg, rgba(13, 13, 13, 0.8) 26.84%, rgba(0, 0, 0, 0) 72.25%),
+    linear-gradient(0deg, rgba(13, 13, 13, 0.52) 0%, rgba(13, 13, 13, 0.52) 100%),
+    url(../images/backgrounds/sandstorm_03.jpg) no-repeat top,
+    #0d0d0d -24.828px -51.5px / 103.448% 115.147% no-repeat;
+  background-attachment: scroll;
+  background-size: 100%;
+}
+
+body.games::before {
+  display: block;
+  content: '';
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(13, 13, 13, 0.16);
+  backdrop-filter: blur(10px);
+  z-index: -100;
+}
+
+body.desert::before,
+body.crypto::before,
+body.curse::before {
+  display: block;
+  content: '';
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(13, 13, 13, 0.16);
+  z-index: -100;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar .navbar-brand {
+  margin-right: 0;
+}
+
+.navbar .container {
+  padding-left: 0;
+}
+
+.navbar .container-fluid {
+  padding: 26px 58px 25px 40px;
+}
+
+.navbar .navbar-brand {
+  padding: 0;
+}
+
+.navbar .navbar-nav .nav-item {
+  position: relative;
+  padding: 0;
+  margin: 0 10px;
+}
+
+.navbar .navbar-nav .nav-item:first-child {
+  margin-left: 0;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #f0f0f0;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 5px 0;
+}
+
+.navbar .navbar-nav .nav-item .nav-link::after {
+  display: block;
+  content: '';
+  position: absolute;
+  border-bottom: 2px solid #b28539;
+  left: 0;
+  bottom: 0;
+  transition: all ease-in-out 0.4s;
+  width: 0;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active,
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #b28539;
+  font-weight: 700;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active::after,
+.navbar .navbar-nav .nav-item .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.locale {
+  display: flex;
+  flex-direction: row;
+  column-gap: 6px;
+  align-items: center;
+  align-content: center;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.locale i.fa-solid {
+  margin-top: 4px;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.default-button,
+.default-button:hover {
+  background: transparent url(../images/buttons/default.svg) no-repeat center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 169px;
+  min-height: 36px;
+  color: #f0f0f0;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.search-form {
+  margin-bottom: 28px;
+}
+
+.search-form input[name='q'] {
+  background: rgba(240, 240, 240, 0.24) url(../images/icons/search.svg) no-repeat 16px center;
+  padding: 0 46px;
+  backdrop-filter: blur(10px);
+  color: #aaa;
+  font-family: Tajawal;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  width: 287px;
+  border: 0;
+}
+
+.advert {
+  clip-path: polygon(0 0, 93% 0, 100% 18%, 100% 100%, 0 100%);
+  overflow: hidden;
+  position: relative;
+}
+
+.advert::before {
+  display: block;
+  background: linear-gradient(90deg, rgba(13, 13, 13, 0.8) 48.38%, rgba(13, 13, 13, 0) 98.98%);
+  content: '';
+  height: 100%;
+  width: 77%;
+  position: absolute;
+}
+
+.player-status {
+  color: #f0f0f0;
+  font-family: Tajawal;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 36px;
+}
+
+.player-status .default-button {
+  flex-direction: row;
+}
+
+.advert .device-desktop,
+.game-sections .device-desktop {
+  background: rgba(30, 30, 30, 0.92);
+  width: 100px;
+  line-height: 24px;
+  color: #f0f0f0;
+  font-family: Tajawal;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  position: absolute;
+  top: 56px;
+  left: 53px;
+  padding: 0 8px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.advert .device-desktop::before,
+.game-sections .device-desktop::before {
+  display: block;
+  content: url(../images/icons/desktop.svg);
+  line-height: 1;
+  padding: 4px 0 0;
+}
+
+.advert .device-desktop::after,
+.game-sections .device-desktop::after {
+  display: block;
+  content: 'Desktop';
+}
+
+.advert .title {
+  left: 52px;
+  top: 92px;
+  position: absolute;
+}
+
+.advert .description {
+  color: #f0f0f0;
+  font-family: Tajawal;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  top: 185px;
+  left: 52px;
+  max-width: 416px;
+}
+
+.advert .default-button {
+  position: absolute;
+  top: 293px;
+  left: 52px;
+}
+
+.social-links {
+  position: fixed;
+  top: 189px;
+  left: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  list-style: none;
+  padding: 0;
+}
+
+.social-links li {
+  display: block;
+}
+
+h2 {
+  color: #f0f0f0;
+  font-family: Tajawal;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 28px;
+}
+
+.game-sections {
+  margin-top: 52px;
+}
+
+.game-sections .game-item {
+  display: block;
+  background: rgba(30, 30, 30, 0.52);
+  color: #f0f0f0;
+  font-family: Tajawal;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.game-sections .game-item .image {
+  position: relative;
+}
+
+.game-sections .game-item .image .device-desktop {
+  top: unset;
+  bottom: 12px;
+  left: 20px;
+}
+
+.game-sections .game-item .title {
+  display: block;
+  padding: 20px 24px 24px 20px;
+  line-height: 29px;
+}
+
+.crypto-advert,
+.curse-advert {
+  margin-top: 35px;
+}
+
+.crypto-advert {
+  margin-top: 50px;
+}
+
+.crypto-title,
+.curse-title {
+  margin-bottom: 28px;
+}
+
+.game-menu {
+  margin-top: 52px;
+}
+
+.game-menu .item .image.active {
+  border: #f0f0f0 2px solid;
+}
+
+.game-sections .live-game-item,
+.game-sections .live-game-item {
+  display: block;
+  background: transparent;
+  color: #f0f0f0;
+  font-family: Tajawal;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  max-width: 270px;
+  padding-bottom: 1px;
+}
+
+.live-game-item .game-description,
+.live-game-item .game-description {
+  margin-top: 16px;
+}
+
+.live-game-item .description,
+.live-game-item .description {
+  overflow: hidden;
+  color: #f0f0f0;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  font-family: Tajawal;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 4px;
+  line-height: 1;
+}

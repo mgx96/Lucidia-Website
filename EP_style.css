@@ -336,6 +336,7 @@
 
 .login-section{
     display: flex;
+    position: relative;
     flex-direction: column;
     gap: 1vh;
     flex: 1;
@@ -450,12 +451,54 @@
     height: 1.8vh;
     position: absolute;
     right: 65%;
-    padding-top: .1rem;
+    padding-top: .2rem;
 }
+
+.loader{
+    display: none;
+    pointer-events: none;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 22em;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-color: rgba(0, 0, 0, 0.4);
+    border-top-color: #b28539;
+    animation: an1 .6s ease infinite;
+}
+
+.loader.active{
+    display: flex;
+}
+
+@keyframes an1{
+    0%{
+        transform: rotate(0turn);
+    }
+
+    25%{
+        transform: rotate(0.25turn);
+    }
+
+    50%{
+        transform: rotate(0.5turn);
+    }
+
+    75%{
+        transform: rotate(0.75turn);
+    }
+
+    100%{
+        transform: rotate(1turn);
+    }
+}
+
 
 .walletconnect-icon{
     height: 2vh;
     position: absolute;
+    padding-top: .1rem;
     right: 64%;
 }
 
@@ -464,6 +507,28 @@
     letter-spacing: 0.2px;
     color: #fafafa;
 }
+
+.error-message{
+    display: none;
+    position: sticky;
+    width: 100%;
+    gap: .5vw;
+    justify-content: center;
+}
+
+.error-text{
+    color: rgba(255, 72, 72, 0.815);
+    display: inline-flex;
+}
+
+.error-icon{
+    height: 1.8vh;
+}
+
+.error-message.active{
+    display: flex;
+}
+
 
 .tournament-cards-container{
     margin-top: 5vh;
@@ -536,6 +601,13 @@
     margin-top: 1vh;
 }
 
+.text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 12vh;
+    width: 55vw;
+}
 
 .search{
     backdrop-filter: blur(2px);
@@ -548,6 +620,156 @@
     height: 2.3vh;
     text-align: center;
     color: #a0a0a0;
+}
+
+.dao-body-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.dao-text-container{
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+    position: relative;
+    left: 7.8vw;
+    justify-content: space-between;
+}
+
+.dao-cards-container{
+    display: inline-flex;
+    position: relative;
+    left: 6vw;
+    top: 5vh;
+    width: 90vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1vh;
+}
+
+.dao-card{
+    background-color: rgba(0,0,0,0.23);
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+    backdrop-filter: blur(4px);
+    height: 30vh;
+    width: 21vw;
+}
+
+.content-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.vote-status{
+    width: 100%;
+}
+
+.vote-content{
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom:1em ;
+}
+
+.vote-outcome-approved{
+    color: #dadada;
+    list-style-type: none;
+    position: relative;
+    right: 1.3em;
+}
+
+.vote-outcome-rejected{
+    color: #dadada;
+    list-style-type: none;
+    position: relative;
+    right: 1.3em;
+}
+
+.rejected-icon{
+    width: 1vw;
+    height: 1.7vh;
+    position: relative;
+    right: .1em;
+}
+
+.vote-date{
+    color: #dadada;
+    list-style-type: none;
+    position: relative;
+}
+
+.voting-results{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.voting-bar-approved1{
+    height: .8vh;
+    width: 100%;
+    background-color: rgba(4, 253, 170, 0.714);
+}
+
+
+.progress__fill-approved1{
+    width: 45%;
+    height: 100%;
+    background-color: rgb(240, 68, 68);
+}
+
+.voting-bar-approved2{
+    height: .8vh;
+    width: 100%;
+    background-color: rgba(4, 253, 170, 0.714);
+}
+
+
+.progress__fill-approved2{
+    width: 68%;
+    height: 100%;
+    background-color: rgb(240, 68, 68);
+}
+
+.voting-bar-approved3{
+    height: .8vh;
+    width: 100%;
+    background-color: rgba(4, 253, 170, 0.714);
+}
+
+
+.progress__fill-approved3{
+    width: 45%;
+    height: 100%;
+    background-color: rgb(240, 68, 68);
+}
+
+.voting-bar-approved4{
+    height: .8vh;
+    width: 100%;
+    background-color: rgba(4, 253, 170, 0.714);
+}
+
+
+.progress__fill-approved4{
+    width: 80%;
+    height: 100%;
+    background-color: rgb(240, 68, 68);
+}
+
+.progress__text1{
+    color: #a0a0a0;
+    position: relative;
+}
+
+.progress__text2{
+    color: #a0a0a0;
+    position: absolute;
+    left: 16vw;
 }
 
 @media (max-width: 1545px) {
@@ -570,6 +792,14 @@
     .tournament-card{
         height: 30vh;
     }
+
+    .button{
+        font-size: 1rem;
+    }
+
+    ._btn{
+        width: 13rem;
+    }
 }
 
 @media (max-width: 1325px) {
@@ -586,11 +816,23 @@
     .title{
         font-size: 1.7rem;
     }
+
+    .button{
+        font-size: .85rem;
+    }
+
+    ._btn{
+        width: 11rem;
+    }
 }
 
 @media (max-width: 1250px){
     .text{
         font-size: 1rem;
+    }
+
+    .button{
+        font-size: .81rem;
     }
 }
 

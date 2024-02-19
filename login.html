@@ -34,7 +34,7 @@
             <nav class="navbuttons-login">
                 <ul class="menu">
                     <li><a href="./index.html" class="home button">Home</a></li>
-                    <li><a href="./games.html" class="games button">Games</a></li>
+                    <li><a href="./Games-Page/games.html" class="games button">Games</a></li>
                     <li><a href="./tournaments.html" class="tournaments button">Tournaments</a></li>
                     <li><a href="./marketplace.html" class="marketplace button">Marketplace</a></li>
                     <li><a href="./DT.html" class="tools button">Dev Tools</a></li>
@@ -52,10 +52,12 @@
                             <h4 class="login-instructions">Login with</h4>
                             <div class="wallet-buttons-container">
                                 <a href="#"><button class="_btn-wallet metamask">
+                                    <div class="loader"></div>
                                     <img class="metamask-icon" src="./metamask-icon.png" alt="metamask icon">MetaMask</button></a>
                                 <a href="#"><button class="_btn-wallet walletconnect">
                                     <img class="walletconnect-icon" src="./walletconnect-vector-logo-seeklogo/walletconnect-seeklogo.svg" alt="walletconnect icon">WalletConnect</button></a>
                             </div>
+                            <div class="error-message"><img class="error-icon" src="./cropped icons/material-symbols-light_cancel-presentation-sharp.png" alt="error message"><p class="error-text">Failed to connect. You can try again.</p></div>
                         </div>
                     </div>
                 </div>
@@ -64,5 +66,6 @@
     </div>
     <script src="./hamMenu.js"></script>
     <script src="./pageSelector.js"></script>
+    <script src="./walletSelector.js"></script>
 </body>
 </html>
